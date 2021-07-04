@@ -1,6 +1,0 @@
-com\app\models\HelloWorld.class
-com\app\controllers\UserController.class
-com\app\controllers\StudentController.class
-com\app\models\User.class
-com\app\models\Student.class
-com\app\controllers\HelloWorldController.class

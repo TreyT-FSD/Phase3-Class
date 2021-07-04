@@ -19,8 +19,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-  <dependencies>
-  
+  <dependencies>  
 	  <!-- Spring ORM -->  
 	  <dependency>
 		    <groupId>org.springframework</groupId>
@@ -74,37 +73,41 @@
 			<version>5.2.10.Final</version>
 		</dependency>
 
-		<!-- c3p0 -->
+		<!-- c3p0-->
 		<dependency>
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.5.2</version>
 		</dependency>		
 
-		<!-- JSTL Dependency -->
+		<!-- Servlet, taglib, and JSTL Dependencies -->
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>javax.servlet-api</artifactId>
 		    <version>4.0.1</version>
 		    <scope>provided</scope>
 		</dependency>
+		
 		<dependency>
 		    <groupId>javax.servlet.jsp</groupId>
 		    <artifactId>javax.servlet.jsp-api</artifactId>
 		    <version>2.3.3</version>
 		    <scope>provided</scope>
 		</dependency>
+		
 		<dependency>
 		    <groupId>taglibs</groupId>
 		    <artifactId>standard</artifactId>
 		    <version>1.1.2</version>
 		</dependency>
+		
 		<dependency>
 	    	<groupId>javax.servlet</groupId>
 	    	<artifactId>jstl</artifactId>
 	    	<version>1.2</version>
-	</dependency>
+		</dependency>
 		
+		<!-- JAXB libs to fix the JAXB Exception when starting the server -->
 		<dependency>
 		    <groupId>jakarta.xml.bind</groupId>
 		    <artifactId>jakarta.xml.bind-api</artifactId>
