@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- Setter bean -->
+	
+	<bean id="userObj" class="com.app.model.User">
+		<property name="id" value="1001" />
+		<property name="name" value="Trey"/>
+	</bean>
+	 
+	
+	<!-- constructor bean, we pass args to the constructor -->
+	<bean id="empObj" class="com.app.model.Employee">
+		<constructor-arg type="int" value="101"/>
+		<constructor-arg type="String" value="King"/>
+	</bean>        
+        
+</beans>
