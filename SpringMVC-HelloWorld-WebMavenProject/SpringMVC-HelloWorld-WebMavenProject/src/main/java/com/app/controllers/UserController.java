@@ -38,7 +38,7 @@ public class UserController {
 	 * This is the action that we defined in the form, this will get called by our form
 	 * 
 	 * The ModelAttribute binding binds the Attribute that was set via the form
-	 * to the USer object parameter that is being passed into this method.
+	 * to the User object parameter that is being passed into this method.
 	 * This lets us access that attribute as as object without having to do 
 	 * all the getAttribute() and casting as an object that we used to have to do with JSP/JSTL. 
 	 * 
