@@ -1,15 +1,16 @@
 package com.app.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
+@RequestMapping("/hw")
 public class HelloWorldController {
 	
+	//TODO: fix this, currently doesnt work. how to do JSP with SpringBoot?
 	@RequestMapping("/")
-	public String sayHello() {
-		return "Hello world spring boot";
+	public String HelloWorld() {
+		return "HelloWorldJSP";
 	}
-	
 
 }
